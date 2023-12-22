@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+
+    <body>
+        <h1>Collapse in bootstrap</h1>
+
+        <!--.collapse class
+            data-toggle="collapse"
+            .show
+            data-parent is a atttribute
+        -->
+
+        <div class="container">
+
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#test">More Details</button>
+            <div id="test" class="collapse show">
+                THIS is the information man!!!!!!!!!!
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#123">One</a>
+                </div>
+                <div id="123" class="collapse show" data-parent="#accordian">
+                    Demo,,,,,,,,,,,,,,,,.........
+                </div>
+
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#123">One</a>
+                </div>
+                <div id="123" class="collapse show" data-parent="#accordian">
+                    Demo,,,,,,,,,,,,,,,,.........
+                </div>
+
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#123">One</a>
+                </div>
+                <div id="123" class="collapse show" data-parent="#accordian">
+                    Demo,,,,,,,,,,,,,,,,.........
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
