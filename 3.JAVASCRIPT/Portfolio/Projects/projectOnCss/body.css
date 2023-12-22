@@ -1,0 +1,86 @@
+#content-box{
+    background-color: #000000;
+    top:9vh;
+
+    padding:3rem;
+    position: relative;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; */
+
+}
+
+.content-section{
+    /* height: 800px;  */
+    
+    width: 80vw;
+    /* border:white 1px solid; */
+    /* height:45vh; */
+    position: relative;
+    
+    
+    
+}
+
+.song-info{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content:center; */
+}
+.section-heading{
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1rem;
+    position: relative;
+
+}
+
+
+
+/* .section-heading div h1{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color:#938f8f;
+    height: 2rem;
+    width: 2rem;
+    justify-content: space-between;
+    border: 1px white solid;
+    border-radius: 5rem;
+    
+} */
+.description{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.song-info div .imgClass{
+    border: skyblue 3px solid;
+    background-color: rgb(52, 52, 50);
+    color:aqua;
+    height: 500px;
+    width: 500px;
+    
+    
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+.song{
+    margin: 1.5rem;
+    position: relative;
+
+}
+
+.imgClass:hover{
+    border-radius: 2rem;
+    /* border: rgb(255, 255, 255) 6px solid; */
+    
+    cursor: pointer;
+}

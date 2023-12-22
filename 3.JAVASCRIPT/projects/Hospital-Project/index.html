@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital-Project</title>
+
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontAwesome.css">
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif ;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none ;
+            text-decoration: none !important;
+            text-transform: capitalize;
+            font-weight: 400;
+            transition: all .2s linear;
+        }
+
+        :root{
+            --blue:#0188DF;
+            --black:#354046;
+        }
+
+
+        body{
+            /* background-color: #334; */
+            overflow: hidden;
+        }
+
+        *::selection{
+            background-color: var(--black);
+            color: #fff;
+        }
+
+        html{
+            font-size:62.5%;
+            overflow: hidden;
+        }
+
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 2rem 1rem;
+            z-index: 100%;
+        }
+
+        header .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .container .logo{
+            font-size: 3rem;
+        }
+
+        header .container .logo span{
+            color:var(--blue);
+        }
+
+        header a{
+            color: var(--black);     
+        }
+
+        header a:hover{
+            color: var(--blue);
+        }
+
+        header .nav ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        header .nav ul li{
+            margin: 0 1rem;
+
+        }
+
+        header .nav ul li a{
+            font-size: 2rem;
+        }
+
+        header .fa-bars{
+            font-size: 3.5rem;
+            color : var(--blue);
+            cursor: pointer;
+            display: none;
+
+        }
+
+        @media (max-width:768px){
+            html{
+                font-size: 55%;
+
+            }
+
+            header .fa-bars{
+                display: block;
+            }
+
+            header .nav{
+                position: fixed;
+                /* top: 50%; */
+                top: -100rem;
+                opacity: 0;
+
+
+                left: 50%;
+                transform:translate(-50%,-50%);
+                box-shadow: 0 0 0 100vh rgba(0,0,0,.3);
+                border-radius: .5rem;
+                border: .3rem solid var(--blue) !important;
+                background-color: #fff;
+                width: 95%;
+            }
+
+            header .nav ul {
+                width: 100%;
+                flex-flow: column;
+                padding: 2rem 0;
+
+            }
+
+
+            header .nav ul li a{
+                font-size: 3rem;
+                display: block;
+            }
+
+            header .fa-times{
+                transform: rotate(180deg);
+            }
+
+            header .nav-toggle{
+                top: 50%;
+                opacity: 1;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- header section start -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="#" class="logo">
+                <span>H</span>ealth<span>C</span>are.
+            </a>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#facility">facility</a></li>
+                    <li><a href="#review">review</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#post">post</a></li>
+                </ul>
+            </nav>
+
+            <!-- .fas.fa-bars -->
+
+            <div class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+    <!-- header section end -->
+
+    
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

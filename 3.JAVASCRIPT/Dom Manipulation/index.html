@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Dom Manipulation</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .vh-100{
+                padding: 2rem;
+                height: 100vh;
+            }
+
+            .bg-red{
+                background-color: red;
+            }
+            .bg-blue{
+                background-color: blue;
+            }
+            .bg-green{
+                background-color: green;
+            }
+
+            .btn{
+                width: 5rem;
+                height: 2.5rem;
+                background-color: black;
+                color: white;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                box-shadow: 0.2rem 0.3rem 1rem;
+                margin: 1rem;
+            }
+
+            .btn:hover{
+                box-shadow: 0.1rem 0.4rem 1rem;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="a vh-100 bg-red" id="a">
+            <button class="btn tar-b">b</button>
+            <button class="btn tar-c">c</button>
+        </div>
+        <div class="b vh-100 bg-blue">b
+            <!-- <div class="class class2"></div> -->
+        </div>
+        <div class="c vh-100 bg-green">c</div>
+
+        <script src="dom.js"></script>
+    </body>
+</html>
