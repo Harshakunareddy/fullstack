@@ -1,0 +1,151 @@
+#top-nav-bar{
+    
+}
+
+
+
+
+
+
+#idname{
+    border:3px solid red; /*dashed dotted ridged*/
+    color:blue;
+    padding:10px 10px 10px 10px;
+    margin:5px,20px;
+    /*margin:10px,auto;*/
+
+}
+
+#normal{
+    font-style:normal;
+}
+/*
+normal,italic,oblique
+*/
+#italic{
+    font-style: italic;
+}
+
+#idname{
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    line-height: 100%;
+}
+
+
+#containeridname{
+    color:blue;
+    border:2px solid black;
+    border-radius:10px;
+
+}
+
+#centered{
+    color:blue;
+    text-align:center;
+
+}
+
+#centered2{
+    margin:auto;
+    width:30px;
+}
+
+
+/*positioning*/
+
+#id-name::after{/*before*/
+    position:absolute;/* fixed relative */
+    top:20px;
+    bottom:30px;
+    right:30px;
+    left:40px;
+    z-index:5;
+    content: "hai@@@@@";
+}
+
+
+img{
+    float:right;
+}
+
+
+/* overflow */
+
+ol{
+    width:100px;
+    padding:10px;
+    margin:auto;
+    background:blue;
+    max-height:200px;
+    overflow: scroll;
+
+}
+li:nth-child(2n){/*first-child last-child , first-line last-line first-letter last-letter .....for para*/
+    background-color: pink;
+}
+
+
+a:hover{/* active visited */
+    background:pink;
+    color:blue;
+    cursor: pointer;
+}
+
+body{
+    background: orange;
+    background-image: linear-gradient(to right,#ba0d0d,#ba0d,#23de,#e6ffff);
+    background-image: radial-gradient(to right,#ba0d0d,#ba0d,#23de,#e6ffff);
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+
+}
+
+#wrapper{
+
+    text-decoration: line-through;
+    visibility: hidden;
+    white-space:nowrap;
+    direction: ltr;
+    display:block;
+    word-spacing:1px;
+    letter-spacing: 10px;
+    clear:both;
+    list-style: circle;
+    box-shadow: 0 0 3px 5px rgba(0,0,0,0.5);/*out-line:pink; or none*/
+}
+
+
+
+/*animation*/
+div{
+    background: red;
+    width:200px;
+    height:200px;
+    animation-name: animation;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    border:2px solid black;
+    position:relative;
+    animation-iteration-count: 100;
+
+}
+div:hover{
+    transform: scale(2);
+    transform: rotate(45deg);
+    transform: skew(20deg,50deg);
+    transform: translate(120px,120px);
+
+}
+
+@keyframes animation{
+    0%{background-color:red; left:0px; top:opx;}
+    25%{background-color:blue; left:300px; top:300px;}
+    50%{background-color:pink; left:0px; top:300px;}
+    100%{background-color:yellow; left:0px; top:opx;}
+}
+
+
+
+
+

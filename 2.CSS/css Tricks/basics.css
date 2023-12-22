@@ -1,0 +1,85 @@
+/* selectors :->*,Element,id,class 
+div h1{
+    font:100;
+}
+div>h1{
+    directchild;
+}
+div ~ h1{
+    siblings;
+}
+div + h1{
+    very next element after child;
+}
+
+pseudo classes:hover,focus for focusing on the clicked item,required,checked for checkbox,disabled for disabling checkbox
+
+li:first-child{
+    font-size: large;
+}
+li:nth-child(2n-1){
+    background-color: red;
+}
+
+li:only-child{
+    font: 100;
+}
+
+span:first-of-type{
+    very first element will get the properties as like span;
+}
+
+span:last-of-type,span:nth-last-of-type(2n){
+    last ele get the properties;
+}
+
+li:not(.classname){
+    font: 100;
+}*/
+/* Combining of selectors in css */
+
+/* #idname.classname.classname2{
+    font-weight:bold;
+} */
+
+/* <h1 class="large-heading">Title</h1>
+h1.large-heading{
+    font-size:10px;
+} */
+
+/* specificity:
+-----------inline>id>class>element */
+
+.classname{
+    color: rgb(red, green, blue);
+    color: rgb(255, 255, 5);
+    color:rgba(blue,green,red,0.5);
+    color:#ffffff00;
+    color:#ffffffff;
+}
+
+.qwerty{
+    font-size: 3rem;
+    /* color:#00000069;          like the rgba  */
+    /* color:#f7171796; */ 
+    color: hsl(hue, saturation, lightness);
+    color: hsl(0,100%,23% );
+    color: hsl(360,50%,50% );
+    color: hsl(180,50%,50% );
+}
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    margin:70px;
+    border:10px orange solid;
+    padding:30px;
+    background-color:green;
+    display: inline-block;
+}
+
+
+/* sizes:10%,10em,10rem,10px */
+
+

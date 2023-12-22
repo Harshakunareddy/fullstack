@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* we cant use pseudo ele for empty contents like input type=text etc.. */
+            /* and we can add only one pseudo ele for a ele in before and also same in ::after */
+            .req::before{
+                content: ' ';
+                background-color: red;
+                height: 10px;
+                width: 10px;
+                display: block;
+
+            }
+
+            .req::after{
+                content: ' ';
+                background-color: red;
+                height: 10px;
+                width: 10px;
+                display: block;
+
+            }
+            [data-tooltip]:hover::after{
+                content: attr(data-tooltip);
+                position: absolute;
+                top: 150%;
+                left: 0%;
+                right: 0%;
+            }
+
+            [data-tooltip]{
+                position:relative;
+            }
+
+            /* .req::backdrop */
+        </style>
+    </head>
+    <body>
+        <label class="req">Name</label>
+        <input type="text" required>
+        <button data-tooltip="Tooltip">Submit Form</button>
+        <!-- <div class="pseudoEx">Tiger</div> -->
+    </body>
+</html>

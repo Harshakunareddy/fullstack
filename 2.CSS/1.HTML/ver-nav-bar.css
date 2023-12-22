@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#top-nav-bar{
+    justify-content: start;
+    align-items: center;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+    padding: 2px;
+    /*list-style-type:none;*/ 
+    background-color: aquamarine; 
+    font-size: large;
+    height: 100vh;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+li{
+    display: block;
+    width:5rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: aquamarine;
+    margin-right: 5px;
+
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover,li:focus{
+    background-color: beige;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

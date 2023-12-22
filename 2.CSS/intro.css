@@ -1,0 +1,44 @@
+div{
+
+    background:purple;
+    color:blue;
+}
+
+#idname{
+    font-family:"verdana","gill sans";
+    color:blue;
+}
+
+.classname{
+    color:blue;
+    background:pink;
+}
+
+span#idname{
+    color:blue;
+    text-transform:capitalize;
+}
+
+#idname2 ol li{
+    color:yellow;
+}
+
+#idname3 ul li{
+    color:pink;
+}
+
+h1 + p{
+    background:blue;
+    color:pink;
+}
+
+
+p[id]{
+    color:gray;
+}
+
+
+p[class]{
+    color:pink;
+}
+

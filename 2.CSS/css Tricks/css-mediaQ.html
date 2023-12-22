@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            body{
+                color: red;
+            }
+            .title{
+                font-size: 6rem;
+            }
+            .sub-title{
+                font-size: 4rem;
+            }
+
+            @media (max-width:500px){
+                body{
+                    color: blue;
+                }
+            }
+
+            @media print {
+                body{
+                    color: yellow;
+                }
+            }
+
+            @media (orientation: landscape) { 
+                /* portrait */
+                .title{
+                    background-color: brown;
+                }
+            }
+
+            @media (orientation: landscape) ,(max-width:500px) { 
+            /* @media (orientation: landscape) and (max-width:500px) {  */
+                /* portrait */
+                .title{
+                    background-color: brown;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">title</div>
+        <div class="sub-title">Sub-title</div>
+    </body>
+</html>

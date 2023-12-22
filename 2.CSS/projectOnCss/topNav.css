@@ -1,0 +1,49 @@
+#top-nav-bar{
+    background-color: #000000;
+    height:9vh;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-bottom:#ffffff solid 0.1rem;
+    position: fixed;
+    /* z-index: -1; */
+}
+
+.left{
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: skyblue;
+}
+
+
+.center-ele{
+    width:7rem;
+    color:#938f8f;
+    font-weight: bold;
+    
+}
+
+.center-ele:hover{
+    cursor: pointer;
+    color: #cad3c7;
+    font-size: 20px;
+
+}
+
+.signIn{
+    width:5rem;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.signIn:hover{
+    color:skyblue;
+    font-size:20px ;
+}
+
+
+
+
+

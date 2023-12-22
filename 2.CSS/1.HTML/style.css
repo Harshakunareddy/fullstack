@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: aquamarine;
+}
+a{
+    text-decoration: none;
+}
+
+.date{
+    margin:10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.post{
+    display:inline-block;
+}
+
+
+#hvr::after{/*before*/
+    position:relative;/* fixed relative */
+    top:20px;
+    bottom:30px;
+    right:30px;
+    left:40px;
+    z-index:5;
+    content: "hai@@@@@";
+}

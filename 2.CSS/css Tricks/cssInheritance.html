@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .button{
+                background-color: red;
+                border: unset;
+                background-color:unset;
+                all: unset;
+                all: revert;
+            }
+            .parent{
+                background-color: green;
+                display:initial;
+                /* all: unset; */
+            }
+            .inherit{
+                background-color: inherit;
+            }
+            .btn-2{
+                background-color: inherit;
+                border: inherit;
+                padding: revert;
+                /* all: unset; */
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button" type="button">Button</button>
+        <div class="parent"> this is a div
+            <div class="inherit">
+               this is an example of inheritance
+            </div>
+        </div>
+        <button type="button" class="btn-2">button-2</button>
+    </body>
+</html>

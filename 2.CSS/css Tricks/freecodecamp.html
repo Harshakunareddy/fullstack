@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Code Camp</title>
+    <style>
+        .center{
+            background-color: red;
+            width: 60vw;
+            height: 50vh;
+            max-width: 500px;
+            min-width: 400px;
+            border: 5px solid black;
+            margin: 0 auto;
+            box-shadow: 10px 10px 50px yellow;
+                        /* scaleX scaleY blur color */
+            /* this below is for coloring on all sides os the border above man */
+            /* box-shadow: 0px 0px 0px 10px blue; */
+            border-radius: 5px 150px 5px 100px;
+            filter: blur(5px);
+        }
+
+        .triangle{
+            height: 0;
+            width: 0;
+            /* border-style: solid; */
+            border-style:solid;
+            border-width: 100px 100px 100px 100px;
+            border-color: blue blue yellow red; 
+            margin: 20px auto;
+
+        }
+
+
+        /* .container-shape{
+            width: 200px;
+            height: 300px;
+        } */
+        .shape{
+            height: 0;
+            width: 0;
+            border-style: double;
+            border-width: 100px 200px 100px 400px;
+            /* border-width: 10% 20% 30% 40% ; not working for the percentages bro */
+            border-color: red blue pink yellow;
+            margin: 20px auto;
+        }
+
+        .diff-shape{
+            margin: 20px auto ;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 100px 200px 200px 200px;
+            border-color: red blue transparent transparent;
+        }
+        .square-tri{
+            margin: 20px auto;
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        .child{
+            
+            
+            border-style: solid;
+            border-width: 100px 100px 100px 100px;
+            border-color: blue pink yellow orange;
+        }
+
+        .radial-gradient{
+            /* circle closest-corner at 30% 20%; */
+            width: 500px;
+            height: 500px;
+            /* background-color: black;  no need bro*/
+            margin: 20px auto;
+            background: radial-gradient(circle closest-corner at 30% 20%,yellow 0%, orange 20%, pink 21% , white 50%);
+            /* background: radial-gradient(); */
+        }
+        .radial-gradient:active{
+            transform: scale(100px,100px);
+        }
+    </style>
+
+</head>
+<body>
+    
+     <div class="center"></div>
+     <!-- <div class="center" aria-hidden="true"></div> -->
+
+     <div class="triangle"></div>
+
+     <div class="container-shape">
+        <div class="shape"></div>
+
+     </div>
+
+     <div class="diff-shape"></div>
+
+     <div class="square-tri">
+        <div class="child"></div>
+        <div class="child"></div>
+     </div>
+
+     <div class="radial-gradient">
+
+     </div>
+</body>
+</html>

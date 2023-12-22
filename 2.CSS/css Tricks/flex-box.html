@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+
+            .box-container{
+                background-color: rgb(144, 228, 228);
+                display: flex;
+                /* flex-direction: column; */
+                
+                /* justify-content: center; */
+                /* flex-wrap: wrap;  */
+                /* align-items: flex-start; */
+
+                /* this is for main axis justify-content: center;,flex-start,flex-end,space-between,space-around
+                align-items: center;   this is for cross axis*/
+                /* align-items: stretch; */
+                /* align-items: flex-start; paiki jaruguthai bro */
+                /* align-content: space-between; actually usefull when there are more containers */
+            }
+            .box-1{
+                height: 50%;
+                width: 10%;
+                border: 0.3rem red solid;
+                border-radius: 0.6rem;
+                margin: 2rem;
+
+            }
+            .box-2{
+                height: 50%;
+                width: 50%;
+                border: 0.3rem red solid;
+                border-radius: 0.6rem;
+                margin: 2rem;
+
+                /* flex-shrink: 0; for not shrinking man!!!!! */
+            }
+            .box-3{
+                height: 50%;
+                width: 10%;
+                border: 0.3rem red solid;
+                border-radius: 0.6rem;
+                margin: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box-container">
+            
+            <div class="box-1">Box-1</div>
+            <div class="box-2">Box-2</div>
+            <div class="box-3">Box-3</div>
+
+            <!-- <div class="box-1">Box-1</div>
+            <div class="box-2">Box-3</div>
+            <div class="box-3">Box-3</div>
+
+            <div class="box-1">Box-1</div>
+            <div class="box-2">Box-3</div>
+            <div class="box-3">Box-3</div> -->
+
+        </div>
+    </body>
+</html>

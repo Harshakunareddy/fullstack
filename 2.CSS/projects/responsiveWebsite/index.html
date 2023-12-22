@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive project</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none !important;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        body{
+            /* height: 1000vh; */
+        }
+        header{
+            border-bottom: blue;
+            position: fixed;
+        }
+        .nav-bar{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            /* height: 9vh; */
+            width: 100vw;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color:aqua;
+        }
+        /* menu items styling starts */
+        .menu-ul{
+            display: flex;
+            
+        }
+
+        .menu-ul li{
+            margin: 0 20px;
+            list-style: none;
+        }
+
+        .menu-ul li a{
+            color: #fff;
+        }
+        /* menu items styling ends */
+
+
+        /* sign-btns styling starts */
+        .sign-btns-ul{
+            display: flex;
+
+        }
+        .sign-btns-ul li{
+            margin: 0 20px;
+            list-style: none;
+        }
+
+        .sign-btns-ul li a{
+            color: #fff;
+            
+        }
+        .sign-btns-ul li a:hover{
+            color: aqua;
+            font: bolder;
+        }
+
+        /* sign-btns styling ends */
+
+        /* toggle-button styling starts */
+
+        .toggle-button{
+                position: absolute;
+                top: 1.5rem;
+                right: 1rem;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 21px;
+            }
+        .bars{
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 10px;
+
+            }
+
+        /* toggle-button styling ends */
+            
+        
+        /* functionality for togglling starts */
+
+
+        @media (max-width:900px){
+            .toggle-button{
+                display: flex;
+            }
+            .menu-ul{
+                display: none;
+                width: 100%;
+                flex-direction: column;
+
+            }
+            .sign-btns-ul{
+                display: none;
+                flex-direction: column;
+
+                width: 100%;
+            }
+
+            .nav-bar{
+                flex-direction: column;
+                align-items: flex-start;
+
+            }
+            .menu , .sign-btns{
+                width: 100%;
+            }
+
+            .nav-bar li {
+                text-align: center;
+                margin-top: 10px;
+
+            }
+
+            .sign-btns li{
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .menu-ul.active , .sign-btns-ul.active{
+                    display: flex;
+                }
+
+
+
+        }
+        /* functionality for togglling ends */
+
+
+        /* body styling starts */
+
+        .body-container{
+            background-color: aqua;
+            position:relative;
+            top: 7vh;
+            /* margin-top: 100px; */
+        }
+
+
+
+        /* body styling ends */
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <!-- header section starts -->
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">CompanyLogo</div>
+                <div class="menu">
+                    <ul class="menu-ul">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="sign-btns">
+                    <ul class="sign-btns-ul">
+                        <li><a href="#">Sign-In</a></li>
+                        <li><a href="#">Sign-Up</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="toggle-button">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    
+                </a>
+            </nav>
+        </header>
+        <!-- header section end -->
+
+    </div>
+
+
+
+    <div class="body-container">
+        <div class="items">
+            <div class="item-1 item"> item</div>
+            <div class="item-2 item"></div>
+            <div class="item-3 item"></div>
+            <div class="item-4 item"></div>
+            <div class="item-5 item"></div>
+            <div class="item-6 item"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            .fifty-per{
+                background-color:red;
+                width: 50%;
+            }
+            .fifty-px{
+                background-color: red;
+                width: 64px;
+            }
+            .one-rem{
+                font-size: 3rem;
+            }
+            .one-em{
+                font-size: 3em;
+            }
+
+            .parent{
+                font-size: 30px;
+            }
+            .childRem{
+                font-size: 3rem;
+            }
+            .childEm{
+                font-size: 3em;
+            }
+            .parent90{
+                font-size: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fifty-per">50%</div>
+        <div class="fifty-px">64px</div>
+        no matter where it given it can take acc to their pixels
+        <br>
+        but the % is changes acc to their parent element 
+
+        <div class="one-rem">3rem</div>
+        <div class="one-em">3em</div>
+
+        here no parent for rem and em so same asuasual size is getting.
+        <br>
+        <div class="parent">
+            <div class="childRem">3rem</div>
+            <div class="parent">30px</div>
+            <div class="parent90">3em</div>
+            
+            <!-- parent ki 30px ichinanduku below 3em multiplies 30px  -->
+            <div class="childEm">3em</div>
+        </div>
+    </body>
+</html>

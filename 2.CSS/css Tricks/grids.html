@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .grid-container{
+                display: grid;
+                /* grid-template-columns: 100px 50px; */
+                grid-template-columns: repeat(4,100px);
+                grid-template-rows: 200px 200px;
+                /* grid-gap: 40px; */
+                grid-row-gap: 30px;
+                grid-column-gap:30px;
+                /* grid-template-areas: "header header header header"
+                "sidebar content"
+                "sidebar content"; */
+
+                /* justify-content: center;
+                align-content: end;
+                height: 150vh; */
+                /* justify-items: center;  */
+                /* aa item yokka unna space loneit align to the center mawa bro! */
+                /* align-items: end; */
+                /* aa items yokka pina point lo avi start iste piki and end iste kindaki vastayi aa item yokka kinda vunna point ki */
+
+            }
+            .grid-item{
+                background-color: aqua;
+                border: red 10px solid;
+            }
+            /* .grid-item-1{
+                grid-area: header;
+            }
+            .grid-item-2{
+                grid-area: sidebar;
+            }
+            .grid-item-3{
+                grid-area: cntent;
+            } */
+
+            .grid-item-1{
+                /* grid-column: 1 / -1; 
+                grid-column-start:1; 
+                grid-column-end: -1; */
+                grid-column-start: 1;
+                grid-column-end:5;
+                /* every window will have 10 rows and 10 columns brooooooo!!!!!! */
+            }
+
+            .grid-item-2{
+                grid-row-start: 2;
+                grid-row-end: 12;
+            }
+
+
+            .grid-item-3{
+                grid-row: span 5;
+                grid-column: span 2;
+            }
+
+            /* .flex-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            } */
+            .grid-item-4{
+                align-self: center;
+                justify-self: center;
+                /* e self valla single items ni grid apply chestamu just like align-content and justify-content */
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="grid-container">
+            <div class="grid-item grid-item-1">grid-1</div>
+            <div class="grid-item grid-item-2">grid-2</div>
+            <div class="grid-item grid-item-3">grid-3</div>
+            
+            <div class="grid-item grid-item-4">grid-4</div>
+            <div class="grid-item grid-item-5">grid-5</div>
+            <div class="grid-item grid-item-6">grid-6</div>
+        </div>
+        </div>
+        <script src="dom.js">
+
+        </script>
+    </body>
+</html>

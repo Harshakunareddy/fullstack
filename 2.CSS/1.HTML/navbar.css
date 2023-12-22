@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    /*list-style-type:none; */
+    background-color: aquamarine;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+li{
+    display: inline-block;
+    width:5rem;
+    padding: 1rem;
+    text-align: center;
+    float: none;
+    background-color: aquamarine;
+
+}
+
+li:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.SignUp{
+    float: right;
+    margin-right: 10px;
+
+
+}
+.SignIn{
+    float: right;
+    margin-right: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
