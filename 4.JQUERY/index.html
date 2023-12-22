@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" type="text/css" src="index.css">
+    </head>
+    <body>
+        <h1>JQuery tutorial</h1>
+        <ul type="disk">
+            <li>HAi <a href="google.com">Google</a></li>
+            <li>HAi bro</li>
+            <li>HAi aunty</li>
+        </ul>
+        <script>
+            let design = {
+                color: "blue",
+                background:"red",
+                border:"3px solid black"
+            }
+        </script>
+
+        <div class="puppers">
+            <img src="images/bg.png" height="100px" width="100px">
+            <img src="images/cross.png" height="100px" width="100px">
+            <img src="images/circle.png" height="100px" width="100px">
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("img").addClass("styleclass");
+                });
+            });
+        </script>
+
+        <style>
+            .styleclass{
+                border:5px solid rgb(128, 49, 0);
+            }
+        </style>
+
+        <button>Try Addclass()</button>
+        <script>
+            $(document).ready(function(){
+                //yfugvhibjl
+                $("button").click(function(){
+                    alert("Value:" + $("#sometext").val());
+                });
+
+            });
+        </script>
+
+        <input type="text" id="sometext" value=""><br>
+        <button>Submit</button>
+
+
+
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+        <br>
+        <br>
+        <p> start typing</p>
+        <input type="text" id="press" size="10"> 
+        <script>
+            $(document).ready(function(){
+                $("input").on("keypress",function(){
+                    $("p:last").hide();
+                });
+            });
+        </script><br>
+
+<!-- effects hide(),toggle(),show(),......-->
+        
+
+        <button class="button" id="hide">Hide</button>
+        <button class="button" id="show">Show</button><br>
+        <div class="puppers">
+            <img src="images/bg.png" height="100px" width="100px">
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("img").hide();
+                    //toggle();
+                });
+                $("#show").click(function(){
+                    $("img").show();
+                });
+            });
+        </script>
+
+    
+
+<!--fade in and fade out-->
+        <br>
+        <hr>
+        <div class="puppers">
+            <img src="images/bg.png" id="one" height="100px" width="100px">
+            <img src="images/bg.png" id="two" height="100px" width="100px">
+            <img src="images/bg.png" id="three" height="100px" width="100px">
+        </div>
+        <button name="button">fadeOutFunction</button>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#one").fadeOut("slow");
+                    $("#two").fadeOut("fast");
+                    $("#three").fadeIn("slow");
+                });
+            });
+        </script>
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
